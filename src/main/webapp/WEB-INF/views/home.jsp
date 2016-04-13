@@ -11,14 +11,12 @@
 			<tr>
 				<th>Id</th>
 				<th>Name</th>
-				<th>Email</th>
 			</tr>
 		</thead>
 		<c:forEach items="${personList}" var="person">
 			<tr>
 				<td><a href="${context}/users/${person.id}">${person.id }</a></td>
-				<td><a href="${context}/users/name/${person.userName}">${person.userName }</a></td>
-				<td><a href="${context}/users/email/${person.email}">${person.email }</a></td>
+				<td><a href="${context}/users/name/${person.name}">${person.name }</a></td>
 			</tr>
 		</c:forEach>
 	</table>
