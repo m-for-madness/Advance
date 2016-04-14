@@ -16,17 +16,12 @@ import com.logos.demo.dao.PersonDao;
 @Controller
 public class HomeController {
 
-	private static final Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass());
+	private static final Logger logger = Logger.getLogger(MethodHandles
+			.lookup().lookupClass());
 
-	@Inject
-	private PersonDao personDao;
-
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String home(Model model, HttpServletRequest request) {
-		logger.info("Welcome home!");
-		
 		model.addAttribute("context", request.getContextPath());
-		model.addAttribute("personList", personDao.findAll());
 
 		return "home";
 	}
