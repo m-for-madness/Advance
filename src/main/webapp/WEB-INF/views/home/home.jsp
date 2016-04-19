@@ -6,6 +6,6 @@
 <title>Home</title>
 </head>
 <body>
-	<a href="${context}/users">Show Users</a>
+	<h1>Welcome home</h1>
 </body>
 </html>
