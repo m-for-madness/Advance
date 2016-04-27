@@ -9,5 +9,7 @@ public interface PersonService {
 	List<Person> getAll();
 	
 	void save(Person person);
+	
+	Person getById (long id);
 
 }

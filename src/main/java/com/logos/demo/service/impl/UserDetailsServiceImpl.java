@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.logos.demo.dao.PersonDao;
 import com.logos.demo.model.Person;
+import com.logos.demo.model.Role;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -31,7 +32,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 			throw new UsernameNotFoundException("Error in email");
 
 		Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
-		authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
+		
+	for (Role role : person.getRoles()) {
+		authorities.add(new SimpleGrantedAuthority(role.getName()));
+		}
+
 
 		return new User(person.getId().toString(), person.getPassword(), authorities);
 	}

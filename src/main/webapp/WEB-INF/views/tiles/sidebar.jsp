@@ -10,6 +10,7 @@
 		<li><a href="home">Home</a></li>
 		<sec:authorize access="hasRole('ROLE_USER')">
 			<li><a href="${context}/users">Users</a></li>
+			<li><a href="${context}/my-page">My Page</a></li>
 		</sec:authorize>
 	</ul>
 </div>
