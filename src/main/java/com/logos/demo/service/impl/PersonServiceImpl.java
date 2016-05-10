@@ -17,7 +17,7 @@ public class PersonServiceImpl implements PersonService {
 	@Inject
 	private PersonDao personDao;
 
-	@Secured(value = "ROLE_USER")
+	
 	public List<Person> getAll() {
 		return personDao.findAll();
 	}

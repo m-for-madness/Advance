@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.logos.demo</groupId>
-	<artifactId>logos</artifactId>
-	<name>LOGOS</name>
-	<packaging>war</packaging>
-	<version>1.0.0-BUILD-SNAPSHOT</version>
-	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>logos-homework-my</groupId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.2.5.RELEASE</org.springframework-version>
@@ -17,8 +13,8 @@
 		<org.apache.tiles-version>3.0.5</org.apache.tiles-version>
 		<org.springframework.security-version>3.2.5.RELEASE</org.springframework.security-version>
 	</properties>
-
-	<dependencies>
+  
+  <dependencies>
 
 		<!-- Spring -->
 		<dependency>
@@ -186,4 +182,6 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<artifactId>logos-homework-my</artifactId>
 </project>

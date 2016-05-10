@@ -50,6 +50,18 @@ body {
 	padding: 10px;
 }
 
+.btn{
+	margin-top:10px;
+	
+	
+}
+.reg{ 
+	margin:10px 0px 0px 5px;
+}
+.btn a{
+	color:white;
+}
+
 .btn-sample {
 	margin-top: 10px;
 	color: #428BCA;
@@ -78,6 +90,7 @@ body {
 	{
 	background-color: #FFFFFF;
 	border-color: #EEEEEE;
+	
 }
 
 .btn-sample .badge {

@@ -31,4 +31,9 @@
 		<put-attribute name="main_content" value="/WEB-INF/views/user/myPage.jsp" />
 	</definition>
 	
+		<definition name="registration" extends="base.definition">
+				<put-attribute name="title" value="registration" />
+		<put-attribute name="main_content" value="/WEB-INF/views/registration/registration.jsp" />
+	</definition>
+	
 </tiles-definitions>

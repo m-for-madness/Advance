@@ -1,6 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page isELIgnored="false"%>
-<%@ page session="false"%>
 
 <table id="person_table" class="table default_table">
 	<thead>
@@ -17,11 +16,11 @@
 	</c:forEach>
 
 
-	<form action="${context}/users/save" method="POST">
-		<label>Name</label> <input name="name" type="text">
-		<button type="submit">OK</button>
-	</form>
 </table>
+<form action="${context}/users/save" method="POST">
+	<label>Name</label> <input name="name" type="text">
+	<button type="submit">OK</button>
+</form>
 
 
 

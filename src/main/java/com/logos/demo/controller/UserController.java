@@ -21,15 +21,12 @@ public class UserController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String getAll(Model model, HttpServletRequest request) {
-
-		model.addAttribute("context", request.getContextPath());
 		model.addAttribute("personList", personService.getAll());
-		
 		return "users";
 	}
 	
 	@RequestMapping(value = "save", method = RequestMethod.POST)
-	public String save(@RequestParam String name) {
+	public String save(@RequestParam(name="name") String name) {
 		personService.save(new Person(name));
 		return "redirect:/users";
 	}

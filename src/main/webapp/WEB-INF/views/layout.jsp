@@ -6,7 +6,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html" />
 <title><tiles:getAsString name="title" /></title>
 <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
 <link href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />" rel="stylesheet">

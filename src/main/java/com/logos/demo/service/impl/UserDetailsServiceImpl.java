@@ -31,7 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		if (person == null)
 			throw new UsernameNotFoundException("Error in email");
 
-		Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
+		Collection<SimpleGrantedAuthority> authorities = new ArrayList<SimpleGrantedAuthority>();
 		
 	for (Role role : person.getRoles()) {
 		authorities.add(new SimpleGrantedAuthority(role.getName()));

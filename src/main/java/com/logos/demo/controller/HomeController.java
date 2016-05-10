@@ -21,5 +21,12 @@ public class HomeController {
 		String s = "";
 		return "home";
 	}
+	@RequestMapping(value ="/registration")
+	public String registration(Model model, HttpServletRequest request) {
+
+		return "registration";
+	}
+	
+
 
 }
