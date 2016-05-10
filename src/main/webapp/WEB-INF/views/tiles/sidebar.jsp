@@ -11,7 +11,7 @@
 		<sec:authorize access="hasRole('ROLE_USER')">
 			<li><a href="${context}/my-page">My Page</a></li>
 		</sec:authorize>
-		<sec:authorize access="hasAnyRole('ROLE_ADMIN','ROLE_USER')">
+		<sec:authorize access="hasAnyRole('ROLE_ADMIN')">
 			<li><a href="${context}/users">Users</a></li>
 		</sec:authorize>
 	</ul>
